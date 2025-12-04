@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validasi Nama</title>
+</head>
+<body>
+
+<form onsubmit="return cekNama()">
+  Masukkan Nama: <input type="text" id="nama">
+  <button type="submit">Kirim</button>
+</form>
+
+<script>
+function cekNama() {
+  let nama = document.getElementById("nama").value;
+
+  if (nama === "") {
+    alert("Nama tidak boleh kosong!");
+    return false; // menghentikan submit
+  }
+
+  alert("Form berhasil dikirim!");
+  return true;
+}
+</script>
+
+</body>
+</html>

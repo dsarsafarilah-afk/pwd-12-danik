@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jam Digital</title>
+</head>
+<body>
+
+<h2 id="jam"></h2>
+
+<script>
+setInterval(function() {
+  let waktu = new Date().toLocaleTimeString();
+  document.getElementById("jam").innerHTML = waktu;
+}, 1000);
+</script>
+
+</body>
+</html>

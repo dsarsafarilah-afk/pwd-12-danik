@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jumlahkan Angka</title>
+</head>
+<body>
+
+<input type="number" id="angka1" placeholder="Angka 1"> +
+<input type="number" id="angka2" placeholder="Angka 2">
+<button onclick="jumlah()">Hitung</button>
+
+<p>Hasil: <span id="hasil">0</span></p>
+
+<script>
+function jumlah() {
+  let a = parseInt(document.getElementById("angka1").value);
+  let b = parseInt(document.getElementById("angka2").value);
+  document.getElementById("hasil").innerHTML = a + b;
+}
+</script>
+
+</body>
+</html>
